@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="./contato.css">
+
+    <!-- Fonte dos ícones das redes sociais (Font Awesome) -->
+    <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>   
+    <!-- Cabeçalho -->
+    <header> 
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="Logo Full Force Academia">
+                </a>
+            </div>
+            <!-- Links de navegação -->
+            <div class="menu">
+                <nav>
+                    <a href="./index.html">Inicio</a>
+                    <a href="./planos.html">Planos</a> 
+                    <a href="./horarios.html">Horários</a> 
+                    <a href="./contato.html">Contato</a>  
+                </nav>
+            </div>
+            <!-- Ícones das redes sociais da página-->
+            <div class="midias">
+                <a href="https://facebook.com" target="_blank" class="social">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank" class="social">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.wellhub.com" target="_blank" class="social">
+                    <i class="fa-solid fa-dumbbell"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+        <main class="conteudo">
+            <div class="container-main">
+                <!-- Formulário de contato -->
+                <div class="box1">
+                    <h1>Deixe sua pergunta ou sugestão</h1>
+                    <form>
+                        <fieldset class="f1">
+                            <legend>Informações de Contato</legend>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nome" placeholder="Obrigatório">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" placeholder="Obrigatório">
+                            <label for="mensagem">Sua mensagem:</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite aqui a sua mensagem"></textarea>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+                    </form>
+                </div>
+                <!-- Localização e contato -->
+                <div class="box2">
+                    <h2>Localização e Contato</h2>
+                    <fieldset class="f2">
+                        <ul class="contato-info">
+                            <li><i class="fa-solid fa-location-dot"></i> Rua Anápio Gomes, nº 1024 - Gravataí / RS</li>
+                            <li><i class="fa-solid fa-phone"></i> (51) 3044-2782</li>
+                            <li><i class="fa-brands fa-whatsapp"></i> (51) 98160-6666</li>
+                            <li><i class="fa-solid fa-envelope"></i> contato@fullforceacademia.com.br</li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </div>
+        </main> 
+            <!-- Rodapé -->
+            <footer>
+                <div class="footer-container">
+                    <div class="footer-logo">
+                        <img src="./img/logo.png" alt="Logo Full Force Academia">
+                    </div>
+                    <div class="footer-info">
+                        <p>Endereço: Rua Anápio Gomes, nº 1024 - Gravataí / RS</p> 
+                        <p class="footertexto">&copy; Full Force Academia. Todos os direitos reservados.</p>
+                    </div>
+                </div>
+            </footer>
+</body>
+</html>

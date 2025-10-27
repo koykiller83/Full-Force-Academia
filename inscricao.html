@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+
+    <!-- Link do CSS -->
+    <link rel="stylesheet" href="./inscricao.css">
+
+    <!-- Fonte dos ícones das redes sociais (Font Awesome) -->
+    <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+</head>
+<body>
+    <!-- Cabeçalho -->  
+    <header> 
+        <div class="container-header">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./img/logo.png" alt="Logo Full Force Academia">
+                </a>
+            </div>
+            <!-- Links de navegação -->
+            <div class="menu">
+            <nav>
+                <a href="./index.html">Inicio</a>
+                <a href="./planos.html">Planos</a> 
+                <a href="./horarios.html">Horários</a> 
+                <a href="./contato.html">Contato</a>  
+            </nav>
+        </div>
+        <!-- Ícones das redes sociais da página-->
+        <div class="midias">
+            <a href="https://facebook.com" target="_blank" class="social">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.wellhub.com" target="_blank" class="social">
+                <i class="fa-solid fa-dumbbell"></i>
+            </a>
+        </div>
+    </header>
+    <!-- Conteudo principal -->
+    <div class="container">
+        <!-- Formulário -->
+        <div class="form">
+            <form action="#">
+                <!-- Título com botão de login -->
+                <div class="form-header">
+                    <h1>Inscreva-se</h1>
+                    <div class="entrar-button">
+                        <button><a href="#">Entrar</a></button>
+                    </div>
+                </div>
+                <!-- Campos -->
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(99) 99999-9999" pattern="(\([0-9]{2}\))\s([9]{1})?([0-9]{4})-([0-9]{4})">
+                    </div>
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua senha" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="confirmPassword">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite novamente" required>
+                    </div>
+                </div>
+                <!-- Seletor gênero -->
+                <div class="genero-inputs">
+                    <div class="genero-title">
+                        <h6>Gênero</h6>
+                    </div>
+                    <div class="genero-group">
+                        <div class="genero-input">
+                            <input id="female" type="radio" name="gender">
+                            <label for="female">Feminino</label>
+                        </div>
+                        <div class="genero-input">
+                            <input id="male" type="radio" name="gender">
+                            <label for="male">Masculino</label>
+                        </div>
+                        <div class="genero-input">
+                            <input id="others" type="radio" name="gender">
+                            <label for="others">Outros</label>
+                        </div>
+                        <div class="genero-input">
+                            <input id="none" type="radio" name="gender">
+                            <label for="none">Prefiro não dizer</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Botão continuar-->
+                <div class="continuar-button">
+                    <button><a href="#">Continuar</a> </button>
+                </div>
+            </form>
+        </div>
+    </div>
+<!-- Rodapé -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="./img/logo.png" alt="Logo Full Force Academia">
+        </div>
+        <div class="footer-info">
+            <p>Endereço: Rua Anápio Gomes, nº 1024 - Gravataí / RS</p> 
+            <p class="footertexto">&copy; Full Force Academia. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

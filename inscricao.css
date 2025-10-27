@@ -1,0 +1,343 @@
+/* Fonte usada no site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600&display=swap');
+
+/* Configurações da página */
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Fundo, cor e altura total */
+html, body 
+{
+  height: 100%;
+  background-color: #000;
+}
+
+main 
+{
+    flex: 1;
+}
+
+/* Inicio do cabeçalho */
+
+header 
+{
+    background-color: #000;
+    width: 100%;
+    padding: 2px 0;
+    flex-shrink: 0;
+}
+
+/* Container do cabeçalho */
+.container-header
+{
+    max-width: 1200px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo 
+{
+    flex-shrink: 0;
+}
+
+.logo img 
+{
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+/* Menu */
+.menu nav 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Links */
+.menu nav a 
+{
+    color: azure;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 2px 0;
+    transition: color 0.3s;
+}
+
+/* Mudar cor dos links */
+.menu nav a:hover 
+{
+    color: #d4a043;
+}
+
+/* Botões das redes sociais */
+.midias 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Estilo dos ícones */
+.midias .social 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background-image: linear-gradient(45deg, #f1c04b, #d4a043);
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Mudar cor dos botões das redes sociais */
+.midias .social:hover 
+{
+    transform: scale(1.2);
+    background-image: linear-gradient(45deg, #ff7100, #ffaa00);
+}
+
+/* Rodapé */
+footer 
+{
+  background-color: #000;
+  color: azure;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+/* Container do rodapé */
+.footer-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img 
+{
+  width: 120px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.footertexto 
+{
+  font-size: x-small;
+  padding: 10px 0;
+}
+
+/* Referente ao centro da página */
+body 
+{
+  background-image: url(./img/fundomenu.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container principal */
+.container 
+{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 2rem 20px;
+    min-height: auto;
+    margin: 0 auto;
+}
+
+/* Formulário */
+.form 
+{
+    width: 50%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 10px;
+    border: 2px solid #d4a043;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+}
+
+/* Cabeçalho do formulário */
+.form-header 
+{
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+}
+
+/* Título formulário */
+.form-header h1
+{
+    font-weight: bold;
+}
+
+/* Botão entrar */
+.entrar-button 
+{
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo botão entrar */
+.entrar-button button 
+{
+    border: none;
+    background-color: #d4a043;
+    padding: 0.6rem 1.4rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Efeito botão entrar */
+.entrar-button button:hover 
+{
+    background-color: #f1c04b;
+}
+
+/* Link botão entrar */
+.entrar-button button a 
+{
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* Traço Inscreva-se */
+.form-header h1::after 
+{
+    content: '';
+    display: block;
+    width: 11.5rem;
+    height: 0.3rem;
+    background-color: #d4a043;
+    margin: 2px auto 0;
+    border-radius: 10px
+}
+
+/* Dados do formulário */
+.input-group 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.input-box 
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+.input-box input 
+{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.95rem;
+}
+
+/* Efeito no campo de digitação */
+.input-box input:hover 
+{
+    background-color: #eeeeee75;
+}
+
+/* Legenda dos campos */
+.input-box label, .genero-title h6 
+{
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+/* Mensagem ao usuário dentro da box */
+.input-box input::placeholder 
+{
+    color: #000000be;
+}
+
+/* Estilização dos seletores de gênero*/
+.genero-group 
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62rem;
+    padding: 0 .5rem;
+}
+
+.genero-input 
+{
+    display: flex;
+    align-items: center;
+}
+
+.genero-input input 
+{
+    margin-right: 0.35rem;
+}
+
+.genero-input label 
+{
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #000000c0;
+}
+
+/* Estilo botão Continuar */
+.continuar-button button 
+{
+    width: 100%;
+    margin-top: 2.5rem;
+    border: none;
+    background-color: #d4a043;
+    padding: 0.62rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.continuar-button button:hover 
+{
+    background-color: #ffaa00;
+}
+
+.continuar-button button a 
+{
+    text-decoration: none;
+    font-size: 0.93rem;
+    font-weight: 500;
+    color: #fff;
+}

@@ -1,0 +1,236 @@
+/* Fonte usada no site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+/* Configurações da página */
+* 
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Fundo, cor e altura total */
+html, body 
+{
+  height: 100%;
+  background-color: #000;
+}
+
+/* Rodapé fixo no fim da página */
+body 
+{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main 
+{
+  flex: 1;
+}
+
+/* Cabeçalho */
+header 
+{
+  background-color: #000;
+  width: 100%;
+  padding: 2px 0;
+}
+
+/* Container do cabeçalho */
+.container 
+{
+  max-width: 1200px;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.logo img 
+{
+  width: 150px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Menu */
+.menu nav 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Links */
+.menu nav a 
+{
+  color: azure;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+/* Mudar cor dos links */
+.menu nav a:hover 
+{
+  color: #d4a043;
+}
+
+/* Botões das redes sociais */
+.midias 
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Estilo dos ícones */
+.midias .social 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-image: linear-gradient(45deg, #f1c04b, #d4a043);
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  transition: transform 0.3s, background 0.3s;
+}
+
+/* Mudar cor dos botões das redes sociais */
+.midias .social:hover 
+{
+  transform: scale(1.2);
+  background-image: linear-gradient(45deg, #ff7100, #efa51b);
+}
+
+/* Rodapé */
+footer 
+{
+  background-color: #000;
+  color: azure;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+  letter-spacing: 1.5px;
+}
+
+/* Container do rodapé */
+.footer-container 
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img 
+{
+  width: 120px;
+  height: auto;
+}
+
+.footertexto 
+{
+  font-size: x-small;
+  padding: 10px 0;
+}
+
+/* Referente ao centro da página (main) */
+.conteudo 
+{
+  background-image: url(./img/fundomenu.png);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Título e parágrafo */
+.meio 
+{
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.meio h1 
+{
+  color: azure;
+  font-size: 2rem;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.meio p 
+{
+  color: azure;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.meio p b 
+{
+  color: #f1c04b;
+}
+
+/* Tabela de horários */
+.div-tabela 
+{
+  padding: 0 12px;
+}
+
+/* Configuração da tabela */
+.tabela
+{
+  width: 100%;
+  max-width: 1100px;
+  margin: 24px auto;
+  border-collapse: separate;
+  text-align: center;
+  font-size: 1rem;
+}
+
+/* Cabeçalho tabela */
+.tabela thead th 
+{
+  background: #f1c04b;
+  color: #000;
+  padding: 10px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+/* Corpo tabela */
+.tabela tbody td 
+{
+  background: azure;
+  color: #111;
+  padding: 10px 12px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+/* Rodapé tabela */
+.tabela tfoot td 
+{
+  background-color: azure;
+  color: #000;
+  font-weight: bold;
+  padding: 10px;
+  border-top: 1px solid #000;
+  border-radius: 5px;
+  font-size: small;
+}

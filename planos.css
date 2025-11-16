@@ -187,3 +187,147 @@ footer
 {
   transform: scale(1.05);
 }
+
+@media (max-width: 1024px) {
+  .container-planos {
+    max-width: 75%;
+    margin: 35px auto;
+  }
+}
+
+/* Tablets (768px ou menos) */
+@media (max-width: 768px) {
+  .container {
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .menu nav {
+    gap: 25px;
+  }
+  
+  .menu nav a {
+    font-size: 16px;
+  }
+  
+  .container-planos {
+    max-width: 85%;
+    margin: 30px auto;
+    border-width: 2px;
+  }
+  
+  .footer-container {
+    gap: 50px;
+  }
+}
+
+/* Celulares grandes (480px ou menos) */
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+  
+  .menu nav {
+    gap: 20px;
+    order: 2;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .menu nav a {
+    font-size: 14px;
+  }
+  
+  .midias {
+    order: 3;
+    gap: 12px;
+  }
+  
+  .logo {
+    order: 1;
+  }
+  
+  .container-planos {
+    max-width: 92%;
+    margin: 25px auto;
+    border-width: 1px;
+  }
+  
+  /* Remove efeito hover em dispositivos touch */
+  .container-planos:hover img {
+    transform: none;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .footer-logo img {
+    width: 100px;
+  }
+}
+
+/* Celulares muito pequenos (360px ou menos) */
+@media (max-width: 360px) {
+  .menu nav {
+    gap: 15px;
+  }
+  
+  .menu nav a {
+    font-size: 13px;
+  }
+  
+  .container-planos {
+    max-width: 95%;
+    margin: 20px auto;
+    border-radius: 6px;
+  }
+  
+  .midias .social {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+  }
+  
+  .footertexto {
+    font-size: 0.7rem;
+  }
+}
+
+/* Ajustes para orientação paisagem em celulares */
+@media (max-width: 768px) and (orientation: landscape) {
+  .container-planos {
+    max-width: 90%;
+    margin: 20px auto;
+  }
+}
+
+/* Ajustes para telas muito altas e estreitas */
+@media (max-height: 500px) and (min-width: 768px) {
+  .container-planos {
+    margin: 20px auto;
+    max-width: 70%;
+  }
+}
+
+/* Melhorias de acessibilidade para reduzir movimento */
+@media (prefers-reduced-motion: reduce) {
+  .container-planos img {
+    transition: none;
+  }
+  
+  .container-planos:hover img {
+    transform: none;
+  }
+  
+  .midias .social {
+    transition: none;
+  }
+  
+  .midias .social:hover {
+    transform: none;
+  }
+}

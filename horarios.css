@@ -234,3 +234,57 @@ footer
   border-radius: 5px;
   font-size: small;
 }
+
+@media (max-width: 768px) {
+  .meio 
+  {
+    padding: 20px 15px;
+  }
+  
+  .meio h1 
+  {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .meio p 
+  {
+    font-size: 16px;
+  }
+  
+  .tabela 
+  {
+    font-size: 0.9rem;
+  }
+  
+  .tabela thead th,
+  .tabela tbody td 
+  {
+    padding: 8px 6px;
+  }
+  
+  /* Ocultar colunas menos importantes em mobile */
+  .tabela .mobile-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) 
+{
+  .tabela 
+  {
+    font-size: 0.8rem;
+    min-width: 500px;
+  }
+  
+  .tabela thead th,
+  .tabela tbody td 
+  {
+    padding: 6px 4px;
+  }
+  
+  .meio h1 
+  {
+    font-size: 1.3rem;
+  }
+}

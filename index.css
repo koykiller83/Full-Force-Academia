@@ -248,3 +248,86 @@ footer
 {
   background-color: #f1c04b;
 }
+
+@media (max-width: 768px) 
+{
+  .container 
+  {
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .menu nav 
+  {
+    gap: 20px;
+  }
+  
+  .menu nav a 
+  {
+    font-size: 16px;
+  }
+  
+  .imagens 
+  {
+    gap: 15px;
+    padding: 20px 10px;
+  }
+  
+  .foto 
+  {
+    flex: 1 1 100%;
+    max-width: 350px;
+    min-height: 250px;
+  }
+  
+  .frase1 h2, 
+  .frase2 h2, 
+  .frase3 h2 
+  {
+    font-size: 1.5rem;
+    padding: 8px 15px;
+  }
+  
+  .botao 
+  {
+    padding: 0 15px 40px;
+  }
+  
+  .inscrever 
+  {
+    padding: 12px 30px;
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 480px) 
+{
+  .menu nav 
+  {
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .menu nav a 
+  {
+    font-size: 14px;
+  }
+  
+  .midias 
+  {
+    gap: 10px;
+  }
+  
+  .frase1 h2, 
+  .frase2 h2, 
+  .frase3 h2 
+  {
+    font-size: 1.3rem;
+  }
+  
+  .footer-container 
+  {
+    gap: 30px;
+    flex-direction: column;
+  }
+}

@@ -277,3 +277,28 @@ button:hover
   width: 25px;
   text-align: center;
 }
+
+@media (max-width: 768px) 
+{
+  .container-main {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .box1, .box2 
+  {
+    padding: 20px;
+  }
+
+  .menu nav 
+  {
+    gap: 20px;
+  }
+
+  .footer-container 
+  {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

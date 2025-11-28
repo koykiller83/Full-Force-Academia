@@ -235,56 +235,28 @@ footer
   font-size: small;
 }
 
-@media (max-width: 768px) {
-  .meio 
-  {
-    padding: 20px 15px;
-  }
-  
-  .meio h1 
-  {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-  }
-  
-  .meio p 
-  {
-    font-size: 16px;
-  }
-  
-  .tabela 
-  {
-    font-size: 0.9rem;
-  }
-  
-  .tabela thead th,
-  .tabela tbody td 
-  {
-    padding: 8px 6px;
-  }
-  
-  /* Ocultar colunas menos importantes em mobile */
-  .tabela .mobile-hidden {
-    display: none;
-  }
+/* Estilização Botão WhatsApp */
+.whatsapp-fixo
+{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px #00000055;
+    z-index: 9999;
+    transition: transform .3s;
 }
 
-@media (max-width: 480px) 
+.whatsapp-fixo:hover
 {
-  .tabela 
-  {
-    font-size: 0.8rem;
-    min-width: 500px;
-  }
-  
-  .tabela thead th,
-  .tabela tbody td 
-  {
-    padding: 6px 4px;
-  }
-  
-  .meio h1 
-  {
-    font-size: 1.3rem;
-  }
+    transform: scale(1.15);
 }

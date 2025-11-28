@@ -188,13 +188,15 @@ footer
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s;
+  transition: transform 1.8s, opacity 1.5s ease-in-out;
+  opacity: 1;
 }
 
 /* Quando passar o mouse, dar zoom  */
 .foto:hover img 
 {
   transform: scale(1.05);
+  transition: all 2s ease-in-out;
 }
 
 /* Texto das imagens */
@@ -249,85 +251,28 @@ footer
   background-color: #f1c04b;
 }
 
-@media (max-width: 768px) 
+/* Estilização Botão WhatsApp */
+.whatsapp-fixo
 {
-  .container 
-  {
-    gap: 15px;
-    padding: 0 10px;
-  }
-  
-  .menu nav 
-  {
-    gap: 20px;
-  }
-  
-  .menu nav a 
-  {
-    font-size: 16px;
-  }
-  
-  .imagens 
-  {
-    gap: 15px;
-    padding: 20px 10px;
-  }
-  
-  .foto 
-  {
-    flex: 1 1 100%;
-    max-width: 350px;
-    min-height: 250px;
-  }
-  
-  .frase1 h2, 
-  .frase2 h2, 
-  .frase3 h2 
-  {
-    font-size: 1.5rem;
-    padding: 8px 15px;
-  }
-  
-  .botao 
-  {
-    padding: 0 15px 40px;
-  }
-  
-  .inscrever 
-  {
-    padding: 12px 30px;
-    min-width: 180px;
-  }
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px #00000055;
+    z-index: 9999;
+    transition: transform .3s;
 }
 
-@media (max-width: 480px) 
+.whatsapp-fixo:hover
 {
-  .menu nav 
-  {
-    gap: 15px;
-    justify-content: center;
-  }
-  
-  .menu nav a 
-  {
-    font-size: 14px;
-  }
-  
-  .midias 
-  {
-    gap: 10px;
-  }
-  
-  .frase1 h2, 
-  .frase2 h2, 
-  .frase3 h2 
-  {
-    font-size: 1.3rem;
-  }
-  
-  .footer-container 
-  {
-    gap: 30px;
-    flex-direction: column;
-  }
+    transform: scale(1.15);
 }

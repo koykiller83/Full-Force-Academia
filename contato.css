@@ -278,27 +278,28 @@ button:hover
   text-align: center;
 }
 
-@media (max-width: 768px) 
+/* Estilização Botão WhatsApp */
+.whatsapp-fixo
 {
-  .container-main {
-    flex-direction: column;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: #fff;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
     align-items: center;
-    padding: 20px 10px;
-  }
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px #00000055;
+    z-index: 9999;
+    transition: transform .3s;
+}
 
-  .box1, .box2 
-  {
-    padding: 20px;
-  }
-
-  .menu nav 
-  {
-    gap: 20px;
-  }
-
-  .footer-container 
-  {
-    flex-direction: column;
-    gap: 20px;
-  }
+.whatsapp-fixo:hover
+{
+    transform: scale(1.15);
 }

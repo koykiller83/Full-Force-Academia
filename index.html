@@ -49,7 +49,9 @@
         <section class="imagens">
             <div class="foto">
                 <a href="./estrutura.html">
-                    <img src="./img/academia.jpg"  alt="Estrutura">
+                    <img id="js3" src="./img/academia.jpg"  alt="Estrutura"
+                        onmouseover="trocarImagem3()"
+                        onmouseout="this.src='./img/academia.jpg'">
                     <div class="frase1">
                         <h2>ESTRUTURA</h2>                     
                     </div>
@@ -57,7 +59,9 @@
             </div>
             <div class="foto">
                 <a href="./instrutores.html">
-                    <img src="./img/fisiculturista.jpg" alt="Instrutores">                                     
+                    <img id= "js2" src="./img/fisiculturista.jpg" alt="Instrutores"
+                        onmouseover="trocarImagem2()"
+                        onmouseout="this.src='./img/fisiculturista.jpg'">                                     
                     <div class="frase2">
                         <h2>INSTRUTORES</h2>
                     </div>
@@ -65,7 +69,9 @@
             </div>
             <div class="foto">
                 <a href="./modalidades.html">
-                    <img src="./img/funcional.jpg" alt="Treinos">
+                    <img id="js" src="./img/funcional.jpg" alt="Treinos"
+                        onmouseover="trocarImagem()"
+                        onmouseout="this.src='./img/funcional.jpg'">
                     <div class="frase3">
                         <h2>MODALIDADES</h2>
                     </div>
@@ -90,5 +96,8 @@
             </div>
         </div>
     </footer>
+    
+<!-- Javascript -->
+<script src="./index.js" defer></script>
 </body>
 </html>
